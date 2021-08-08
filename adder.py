@@ -175,6 +175,12 @@ def pre_output(result, overflow, sub):
 
 def main():
     exit_program = ''
+    print("""All 8 bits of the number must be filled with 0 or 1
+Examples:
+00000000
+11111111
+01010101
+00000001""")
     while exit_program != 'q':
         first_8_bit_number = input("Enter first 8-bit number")
         second_8_bit_number = input("Enter second 8-bit number")
