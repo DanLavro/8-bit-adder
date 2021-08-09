@@ -70,16 +70,6 @@ def xor_gate(x, y):
     return and_gate(or_gate(x, y), nand_gate(x, y))
 
 
-def and_gate_4_input(x, y, z, v):
-    """return 1 if all params 1, else 0"""
-    return and_gate(and_gate(x, y), and_gate(z, v))
-
-
-def or_gate_8_inputs(x, y, z, v, x1, y1, z1, v1):
-    """return 1 even if one input is 1"""
-    return or_gate(or_gate(or_gate(x, y), or_gate(z, v)), or_gate(or_gate(x1, y1), or_gate(z1, v1)))
-
-
 def half_adder(first_digit, second_digit):
     """
     input: two bits
